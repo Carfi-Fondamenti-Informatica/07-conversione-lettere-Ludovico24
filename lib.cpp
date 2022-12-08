@@ -1,14 +1,14 @@
-#Includi "lib.h"
+#include "lib.h"
 bool carattere(char &c){
     if (c >= 65 && c <= 90) {
         c += 32;
-        restituisci true;
+        return true;
     }
     else if (c >= 97 && c <= 122) {
         c -= 32;
-        restituisci true;
+        return true;
     }
-    altro {
+    else {
         return false;
     }
 }
